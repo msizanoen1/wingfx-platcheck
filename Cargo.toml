@@ -1,0 +1,29 @@
+[package]
+name = "wingfx-platcheck"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+aes = "0.8.1"
+cmac = "0.7.1"
+cryptographic-message-syntax = "0.16.0"
+digest = "0.10.3"
+hex-literal = "0.3.4"
+rand = "0.8.5"
+rsa = "0.6.1"
+thiserror = "1.0.31"
+x509-certificate = "0.13.0"
+scopeguard = "1.1.0"
+sha2 = "0.10.2"
+
+[dependencies.windows]
+version = "0.38.0"
+features = [
+    "Win32_Graphics_Direct3D9",
+    "Win32_Graphics_Gdi",
+    "Win32_System_Com",
+    "Win32_Foundation",
+    "Win32_Media_MediaFoundation",
+]
